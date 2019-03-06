@@ -15,11 +15,12 @@ while True:
     ads = ADS.ADS1115(i2c)
     ads.gain = 1
 
-    # chan = AnalogIn(ads, ADS.P0)
+    chan = AnalogIn(ads, ADS.P0)
     # chan1 = AnalogIn(ads, ADS.P1)
-    chan = AnalogIn(ads, ADS.P0, ADS.P1)
+    # chan = AnalogIn(ads, ADS.P0, ADS.P1)
 
     print("chan0:", chan.value, chan.voltage)
     # print("chan1:", chan1.value, chan1.voltage)
+    # print("dif:", chan1.voltage - chan.voltage)
 
     time.sleep(0.5)

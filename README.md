@@ -20,4 +20,6 @@
    - Sends message every second
    - To change whatis sent change code in this function: c.HandleNotify(ble.NotifyHandlerFunc(func(req ble.Request, n ble.Notifier) {}
 
+GOARM=6 GOARCH=arm GOOS=linux go build adc.go
+
 ##TODO
